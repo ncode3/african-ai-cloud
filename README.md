@@ -1,17 +1,66 @@
-# RHCSA Learning Journey
+# African AI Cloud — Learning Project
 
-My path from Microsoft Solution Architect to Infrastructure Engineer.
+Exploring a tiny "my-own-AWS" using Linux + automation.  
+This is a **learning project**, not a commercial product.
 
-## Why This Exists
+## What This Is
 
-After 8 years as a Microsoft Solution Architect (Data/AI), I realized I'd been designing cloud solutions without understanding the infrastructure underneath. This repo documents my journey learning Linux, virtualization, and bare metal infrastructure from first principles.
+I'm learning to build cloud infrastructure by migrating my application (Heart Pattern) from AWS to self-hosted RHEL infrastructure. This is about understanding infrastructure from first principles.
 
-## The Journey
+## Current Status
 
-- **Week 0-2**: RHCSA fundamentals with Dave (Red Hat SA mentor)
-- **Week 3-8**: Infrastructure deep dive (monitoring, AI inference, operations)
-- **Week 9-16**: Heart Pattern migration from AWS (proof of concept)
-- **Week 17+**: African AI infrastructure (the bigger vision)
+**Week 0-1: Foundation** ✅
+- Learning RHCSA fundamentals
+- Built 3-node OpenShift cluster with Dave (Red Hat SA mentor)
+- Deployed production-grade Kubernetes on VMware
+- Learned overcommitment, caching, resource planning
+
+**Week 2-8: Deep Dive** 🎯
+- Monitoring & observability
+- AI inference workloads
+- Agentic AI (infrastructure operations)
+- Production troubleshooting
+
+**Week 9-16: Proof of Concept** ⏳
+- Migrate Heart Pattern from AWS
+- Implement Redis caching
+- Measure performance improvements
+- Document cost savings
+
+## Proof-of-Concept Ladder
+
+✅ SSH to a server  
+✅ Deploy a demo app  
+✅ Run an AI agent  
+✅ Build a 3-node cluster  
+🎯 Migrate HeartPattern (current milestone)  
+⏳ Serve external users (future)  
+⏳ Explore quantum (long term)
+
+## Goals
+
+1. **Learn by doing** - Hands-on with real infrastructure
+2. **Migrate Heart Pattern** - From AWS to self-hosted (proof)
+3. **Document everything** - So I (and others) can learn
+4. **Measure results** - Cost savings, performance, lessons
+
+## Tech Stack
+
+- **OS**: Red Hat Enterprise Linux 9
+- **Virtualization**: KVM/QEMU (3-node cluster)
+- **Orchestration**: OpenShift (Kubernetes)
+- **Automation**: Ansible, Python, Bash
+- **Monitoring**: Prometheus, Grafana
+- **Storage**: Ceph (distributed storage)
+- **Caching**: Redis (performance optimization)
+
+## Why?
+
+After 8 years as Microsoft Solution Architect, I realized:
+- I designed cloud solutions without understanding infrastructure
+- AI tools (Cursor, v0) taught me to build FAST but not RIGHT
+- My own app (Heart Pattern) is slow because I don't know caching
+- Infrastructure knowledge = foundation for everything else
 
 ## What I'm Learning
 
@@ -20,41 +69,50 @@ After 8 years as a Microsoft Solution Architect (Data/AI), I realized I'd been d
 - Overcommitment strategies (how clouds make money)
 - Caching architectures (the secret to performance)
 - Network isolation (VLANs, security)
-- Platform delivery (making infrastructure usable)
+- Monitoring & troubleshooting (Prometheus, OOM killer)
 
-### Production Operations
-- Monitoring & observability (Prometheus, Grafana)
-- Troubleshooting (CPU exhaustion, OOM killer, swap thrashing)
-- Automation (Ansible, bash, Python)
-- AI inference workloads (Ollama, tool calling, agentic AI)
-
-### The Gap I'm Filling
-AI tools (Cursor, v0, Bolt) taught me to BUILD fast.
-But they didn't teach infrastructure, caching, or optimization.
-That's what I'm fixing.
+### The Gap
+AI coding tools generate beautiful apps quickly.
+But they don't teach infrastructure, caching, or optimization.
+That's the gap I'm filling.
 
 ## Structure
 
-- `/notes` - Daily learning notes
-- `/practice` - Command exercises
-- `/weekly-log` - Week-by-week progress
-- `/study-plan` - RHCSA exam prep
-- `/resources` - Useful links and references
+- `/docs` - Architecture, plans, deep dives
+- `/weekly-log` - Progress updates
+- `/infrastructure` - Ansible playbooks, configs (future)
+- `/monitoring` - Prometheus/Grafana setup (future)
 
-## Current Status
+## The Bigger Vision
 
-✅ Week 0: Foundation (RHEL environment, cluster setup)
-✅ Week 1: OpenShift deployment on VMware
-🎯 Week 2: Monitoring & AI inference
-⏳ Weeks 3-8: Continued fundamentals
-⏳ Weeks 9-16: Heart Pattern migration
+If successful, this becomes a blueprint for:
+- African founders seeking data sovereignty
+- Cost-effective cloud infrastructure
+- Open-source alternatives to AWS
+- Infrastructure education
+
+But for now: **Learning by doing.**
+
+## Not Goals (Yet)
+
+This is NOT (yet) a commercial venture. It's a learning project that might evolve.
+
+I'm not building:
+- ❌ A commercial cloud platform (yet)
+- ❌ Quantum computing (Phase 4, years away)
+- ❌ Multi-region infrastructure (one location for now)
 
 ## Follow Along
 
-- GitHub: This repo
-- Sibling project: [african-ai-cloud](https://github.com/ncode3/african-ai-cloud)
-- LinkedIn: [https://www.linkedin.com/in/nolan-s-code-mba/]  
+- GitHub (this repo): Documentation and learning
+- GitHub (sibling): [rhcsa-learning-journey](https://github.com/ncode3/rhcsa-learning-journey)
+- LinkedIn: [(https://www.linkedin.com/in/nolan-s-code-mba/)]
 
 ## License
 
-MIT - Learn, share, build freely.
+MIT - Use, learn, share freely.
+
+---
+
+**Current Focus**: Adding Redis caching to Heart Pattern (Week 2-8)  
+**Next Milestone**: AWS migration (Week 9-16)
