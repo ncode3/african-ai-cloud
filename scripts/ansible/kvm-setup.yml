@@ -1,0 +1,26 @@
+# KVM Setup Ansible Playbook
+#
+# 🚧 Coming Soon — This playbook is under development.
+#
+# Planned functionality:
+# - Install KVM packages on RHEL 9
+# - Configure libvirt and networking
+# - Set up storage pools
+# - Create initial VM templates
+#
+# Usage (planned):
+#   ansible-playbook -i inventory kvm-setup.yml
+#
+# Prerequisites:
+# - RHEL 9 target hosts
+# - SSH key authentication configured
+# - Ansible 2.14+ installed
+#
+---
+- name: KVM Setup Placeholder
+  hosts: all
+  become: true
+  tasks:
+    - name: Placeholder task
+      ansible.builtin.debug:
+        msg: "This playbook is under development. Check back soon!"

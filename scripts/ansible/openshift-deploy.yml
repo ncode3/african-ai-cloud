@@ -1,0 +1,26 @@
+# OpenShift Deployment Ansible Playbook
+#
+# 🚧 Coming Soon — This playbook is under development.
+#
+# Planned functionality:
+# - Prepare bare metal nodes for OpenShift
+# - Configure prerequisites (DNS, DHCP, load balancer)
+# - Deploy OpenShift using IPI or UPI method
+# - Post-installation configuration
+#
+# Usage (planned):
+#   ansible-playbook -i inventory openshift-deploy.yml
+#
+# Prerequisites:
+# - Completed KVM setup
+# - Red Hat pull secret
+# - DNS infrastructure configured
+#
+---
+- name: OpenShift Deployment Placeholder
+  hosts: all
+  become: true
+  tasks:
+    - name: Placeholder task
+      ansible.builtin.debug:
+        msg: "This playbook is under development. Check back soon!"
