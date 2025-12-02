@@ -1,0 +1,10 @@
+# Architecture Diagrams Directory
+
+This directory will contain architecture diagrams for the African AI Cloud infrastructure.
+
+Planned diagrams:
+- Network topology
+- Multi-site architecture
+- OpenShift cluster layout
+- Storage architecture
+- Security zones
